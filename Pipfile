@@ -29,6 +29,8 @@ torchvision = "*"
 gensim = "*"
 keras = "*"
 tensorflow-gpu = "*"
+tensorflow = "*"
+fbprophet = "*"
 
 [requires]
 python_version = "3.6"
