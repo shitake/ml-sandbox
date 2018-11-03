@@ -31,6 +31,9 @@ keras = "*"
 tensorflow-gpu = "*"
 tensorflow = "*"
 fbprophet = "*"
+spacy = "*"
+jupyternotify = "*"
+tensorboard = "*"
 
 [requires]
 python_version = "3.6"
