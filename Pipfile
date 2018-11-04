@@ -35,6 +35,8 @@ fastai = "*"
 spacy = "*"
 jupyternotify = "*"
 tensorboard = "*"
+tensorboardx = "*"
+moviepy = "*"
 
 [requires]
 python_version = "3.6"
