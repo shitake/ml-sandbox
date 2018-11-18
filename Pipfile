@@ -38,6 +38,7 @@ tensorboard = "*"
 tensorboardx = "*"
 moviepy = "*"
 augmentor = "*"
+catboost = "*"
 
 [requires]
 python_version = "3.6"
