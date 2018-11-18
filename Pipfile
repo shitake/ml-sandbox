@@ -37,6 +37,7 @@ jupyternotify = "*"
 tensorboard = "*"
 tensorboardx = "*"
 moviepy = "*"
+augmentor = "*"
 
 [requires]
 python_version = "3.6"
