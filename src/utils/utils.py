@@ -1,8 +1,13 @@
 import time
 
+import numpy as np
+import pandas as pd
+
+
 def display_formatted_time(elapsed_time,  msg=""):
     minutes,  seconds = map(int,  divmod(elapsed_time,  60))
     print("Elapsed time - {0}: {1}min {2}s".format(msg,  minutes,  seconds))
+
 
 def measure(func):
     """
@@ -19,7 +24,7 @@ def measure(func):
 
     def wrapper(*args, **kwargs):
         def display_formatted_time(elapsed_time, msg=""):
-            minutes, seconds = map(int, divmod(elapsed_time, 60));
+            minutes, seconds = map(int, divmod(elapsed_time, 60))
             print("Elapsed time - {0}: {1}min {2}s".format(msg, minutes, seconds))
 
         since = time.time()
@@ -27,3 +32,13 @@ def measure(func):
         display_formatted_time(time.time() - since, func.__name__)
 
     return wrapper
+
+
+def search_nan(data):
+    """
+    Args:
+        data (DataFrame)
+    """
+    for k in data.keys():
+        count = np.sum(pd.isnull(data[k]))
+        if count > 0: print("{}: {}".format(count, k))
