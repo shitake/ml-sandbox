@@ -40,6 +40,7 @@ moviepy = "*"
 augmentor = "*"
 catboost = "*"
 isort = "*"
+nltk = "*"
 
 [requires]
 python_version = "3.6"
